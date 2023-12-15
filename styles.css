@@ -1,0 +1,117 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    background: blue;
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+article {
+    background-color: white;
+    width: 580px;
+    height: max-content;
+    padding: 10px;
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.50);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.section__div-flex {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+.header__img {
+    width: 50px;
+    height: 50px;
+}
+
+.header__div-block {
+    display: block;
+    transform: translatey(10px);
+    -webkit-transform: translatey(10px);
+    -moz-transform: translatey(10px);
+    -ms-transform: translatey(10px);
+    -o-transform: translatey(10px);
+}
+
+.header__div-flex {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 10px;
+}
+
+button {
+    outline: none;
+    border: none;
+    background: none;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    width: 120px;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__span-font {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header__btn1 {
+    background-color: rgb(62, 62, 244);
+    color: white;
+}
+
+.header__btn2 {
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.20);
+}
+
+@media only screen and (max-width:625px) {
+    .header__div-flex {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    article {
+        width: 95%;
+    }
+
+    .header__div-block {
+        font-size: .85em;
+    }
+}
